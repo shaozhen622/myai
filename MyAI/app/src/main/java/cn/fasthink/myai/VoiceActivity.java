@@ -1,12 +1,11 @@
 package cn.fasthink.myai;
 
-
 import android.media.MediaRecorder;
-import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
@@ -32,7 +31,7 @@ public class VoiceActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_voice);
         //录音JNI函数不具备线程安全性，所以用单线程
         mExecutorService = Executors.newSingleThreadExecutor();
         mMainThreadHandler = new Handler(Looper.getMainLooper());
