@@ -24,7 +24,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".Main2Activity" />
-        <activity android:name=".VoiceActivity"></activity>
+        <activity android:name=".VoiceActivity" />
+        <activity android:name=".ChatActivity"></activity>
     </application>
 
 </manifest>

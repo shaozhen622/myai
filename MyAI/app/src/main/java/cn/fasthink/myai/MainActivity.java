@@ -82,11 +82,11 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_camera) {
+            Intent intent = new Intent(MainActivity.this, ChatActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.nav_gallery) {
             Intent intent = new Intent(MainActivity.this, VoiceActivity.class);
             startActivity(intent);
-//            setContentView(R.layout.activity_voice);
-        } else if (id == R.id.nav_gallery) {
-
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
